@@ -1270,12 +1270,18 @@ th {
   font-weight: 900;
 }
 
-.recommendation-row--pick {
-  background: rgba(47,111,98,.045);
+.recommendation-row--pick,
+.recommendation-row[data-action-state="waiting"],
+.recommendation-row[data-action-state="none"] {
+  background: rgba(171,116,32,.055);
+}
+
+.recommendation-row[data-action-state="recordable"] {
+  background: rgba(47,111,98,.07);
 }
 
 .recommendation-row[data-action-state="blocked"] {
-  background: rgba(153,61,53,.045);
+  background: rgba(153,61,53,.07);
 }
 
 .recommendation-row[data-action-state="blocked"] td:nth-child(5) strong,
@@ -1736,16 +1742,20 @@ th {
   color: var(--amber);
 }
 
-.status-review,
+.status-review {
+  background: rgba(171,116,32,.14);
+  color: var(--amber);
+}
+
 .status-worse_entry_now {
-  background: rgba(153,61,53,.12);
+  background: rgba(153,61,53,.14);
   color: var(--wine);
 }
 
 .status-no_bet,
 .status-missing {
-  background: rgba(126,120,110,.14);
-  color: var(--stone);
+  background: rgba(153,61,53,.14);
+  color: var(--wine);
 }
 
 .detail-empty {

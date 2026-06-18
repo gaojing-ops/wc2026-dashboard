@@ -69,16 +69,16 @@
   let deepseekAutoAsked = false;
 
   function applyGamblingCopy() {
-    document.title = "WC2026 下注作战台";
+    document.title = "WC2026 推荐单";
     const hero = document.querySelector(".hero");
     if (!hero) return;
     const eyebrow = hero.querySelector(".eyebrow");
     const title = hero.querySelector("h1");
     const copy = hero.querySelector("p");
-    if (eyebrow) eyebrow.textContent = "WC2026 下注作战台";
-    if (title) title.textContent = "主攻，搏冷";
+    if (eyebrow) eyebrow.textContent = "WC2026 推荐单";
+    if (title) title.textContent = "下一轮怎么下";
     if (copy) {
-      copy.textContent = "系统按稳胆、主攻、搏冷三档给候选；GO 前都只是观察，只有实际记录的下注才进入真实账本和赚亏统计。";
+      copy.textContent = "红色先不下，绿色可下注，黄色只观察；所有内容按当前数据生成，不等于已经下注。";
     }
   }
 
