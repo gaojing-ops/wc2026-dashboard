@@ -74,7 +74,7 @@
     if (!hero) return;
     const eyebrow = hero.querySelector(".eyebrow");
     const title = hero.querySelector("h1");
-    const copy = hero.querySelector("p");
+    const copy = hero.querySelector(".hero-copy");
     if (eyebrow) eyebrow.textContent = "WC2026 推荐单";
     if (title) title.textContent = "下一轮怎么下";
     if (copy) {
